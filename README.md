@@ -60,6 +60,30 @@ Transfer tracing on Ethereum, Polygon, Arbitrum, Base, Optimism, Tron, Bitcoin a
 | Is this wallet an exchange deposit address, a mixer or a known scam? | `address_labels` |
 | Expand this Bitcoin address into addresses that likely share an owner. | `btc_related_addresses` |
 
+### Polymarket prediction markets
+14 read-only tools over on-chain Polymarket data on Polygon. They cannot place or cancel orders.
+
+| Ask | Tool the agent picks |
+|---|---|
+| What are the five most traded Polymarket markets in the last 24 hours? | `polymarket_top_markets` |
+| Find the open markets about the Fed rate. | `polymarket_find_markets` |
+| What are the odds on this market right now? | `polymarket_market_odds` |
+| Show the daily close for Yes over the last week. | `polymarket_market_price_history` |
+| Show the latest fills above $10,000 in this market. | `polymarket_market_trades` |
+| Who traded the most in this market? | `polymarket_top_traders` |
+| Is this wallet a market maker or a directional bettor? | `polymarket_trader_summary` |
+| Which outcomes were disputed this week? | `polymarket_market_disputes` |
+
+Sample answer to the first question, production server, 21 September 2026 at 09:08 UTC, data 14 minutes behind the clock:
+
+| Market | 24h volume | Orders | Wallets |
+|---|---:|---:|---:|
+| Colts vs. Chiefs | $4,114,943 | 9,124 | 292 |
+| Will United Russia (ER) gain the most seats in the next Russian parliamentary election? | $4,065,436 | 8,532 | 565 |
+| Will Manchester City FC win on 2026-09-20? | $1,918,415 | 5,523 | 386 |
+
+`polymarket_top_traders` ranks wallets by dollars traded and carries no profit figure. The top wallet in the second market above had 48,736 of its 51,391 lifetime orders resting on the book, which is what a market maker looks like. For building in code, see the [Polymarket GraphQL API docs](https://docs.bitquery.io/docs/examples/polymarket-api/).
+
 ## Plans
 | Plan | Price | Credits per month | Tools |
 |---|---|---|---|
