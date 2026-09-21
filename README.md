@@ -85,7 +85,7 @@ Sample answer to the first question, production server, 21 September 2026 at 09:
 `polymarket_top_traders` ranks wallets by dollars traded and carries no profit figure. The top wallet in the second market above had 48,736 of its 51,391 lifetime orders resting on the book, which is what a market maker looks like. Six worked questions with full output are on the [Polymarket MCP page](https://docs.bitquery.io/docs/mcp/polymarket/). For building in code, see the [Polymarket GraphQL API docs](https://docs.bitquery.io/docs/examples/polymarket-api/).
 
 ### Solana and pump.fun
-Ten `solana_` tools trace transfers, and the market tools cover Solana trades, prices and launches. Read-only: nothing here signs or sends a transaction.
+Ten `solana_` tools cover transfers, signatures and program instructions, and the market tools cover Solana trades, prices and launches. Read-only: nothing here signs or sends a transaction.
 
 | Ask | Tool the agent picks |
 |---|---|
@@ -110,7 +110,7 @@ Check the token address before you trust a row. On 21 September 2026 the top "US
 | Who made the most trading BTC in the last 24 hours? | `hyperliquid_top_traders` |
 | What positions does this wallet hold? | `hyperliquid_trader_positions` |
 
-Sample, production server, 21 September 2026 between 10:21 and 10:25 UTC, after Bitcoin rose 5.4% in a day: 9,265 of the 9,334 BTC liquidations in 24 hours were shorts, worth $92,691,944 in total, and BTC funding went from 10.95% to 78.64% per year within two hours. Profit rankings leave out open positions, so read a wallet's positions before calling it a winner. Six worked questions are on the [Hyperliquid MCP page](https://docs.bitquery.io/docs/mcp/hyperliquid/).
+Sample, production server, 21 September 2026 between 10:21 and 10:25 UTC, after Bitcoin rose 5.4% in a day: the 9,334 BTC liquidations in 24 hours were worth $92,691,944 and 9,265 of them were shorts, and BTC funding went from 10.95% to 78.64% per year within two hours. Profit rankings leave out open positions, so read a wallet's positions before calling it a winner. Six worked questions are on the [Hyperliquid MCP page](https://docs.bitquery.io/docs/mcp/hyperliquid/).
 
 ## Plans
 | Plan | Price | Credits per month | Tools |
