@@ -11,6 +11,10 @@ Official hosted [Model Context Protocol](https://modelcontextprotocol.io) server
 
 This repository holds the install configs, example prompts and docs. The server itself is a hosted service, so there is no code to build here.
 
+**Watch the 38-second demo:** [Polymarket and Hyperliquid data in ChatGPT and Claude](https://www.youtube.com/watch?v=IwuIlcKsANk).
+
+[![Video thumbnail: Polymarket and Hyperliquid data in ChatGPT and Claude with Bitquery MCP](https://img.youtube.com/vi/IwuIlcKsANk/hqdefault.jpg)](https://www.youtube.com/watch?v=IwuIlcKsANk)
+
 ## Install in 60 seconds
 
 **Claude Code**
