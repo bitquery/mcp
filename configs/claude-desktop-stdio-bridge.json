@@ -1,0 +1,1 @@
+{ "mcpServers": { "bitquery": { "command": "npx", "args": ["-y", "mcp-remote", "https://mcp.bitquery.io/mcp"] } } }
