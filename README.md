@@ -82,12 +82,12 @@ Sample answer to the first question, production server, 21 September 2026 at 09:
 | Will United Russia (ER) gain the most seats in the next Russian parliamentary election? | $4,065,436 | 8,532 | 565 |
 | Will Manchester City FC win on 2026-09-20? | $1,918,415 | 5,523 | 386 |
 
-`polymarket_top_traders` ranks wallets by dollars traded and carries no profit figure. The top wallet in the second market above had 48,736 of its 51,391 lifetime orders resting on the book, which is what a market maker looks like. For building in code, see the [Polymarket GraphQL API docs](https://docs.bitquery.io/docs/examples/polymarket-api/).
+`polymarket_top_traders` ranks wallets by dollars traded and carries no profit figure. The top wallet in the second market above had 48,736 of its 51,391 lifetime orders resting on the book, which is what a market maker looks like. Six worked questions with full output are on the [Polymarket MCP page](https://docs.bitquery.io/docs/mcp/polymarket/). For building in code, see the [Polymarket GraphQL API docs](https://docs.bitquery.io/docs/examples/polymarket-api/).
 
 ## Plans
 | Plan | Price | Credits per month | Tools |
 |---|---|---|---|
-| Trial | free, 7 days | 100 |: |
+| Trial | free, 7 days | 100 | see the pricing page |
 | Trading MCP | $19 per month ($15 billed yearly) | 25,000 | 32, market data |
 | AI Investigation MCP | $149 per month ($119 billed yearly) | 200,000 | 123, all data plus labels and tracing |
 
@@ -98,6 +98,7 @@ Paid API plans can add MCP credits without changing plan. Current pricing: [bitq
 - Trading examples: https://docs.bitquery.io/docs/mcp/trading/examples/
 - Tracing overview: https://docs.bitquery.io/docs/mcp/Tracing/overview/
 - Build a trading agent: https://docs.bitquery.io/docs/mcp/build-a-trading-agent/
+- Polymarket: https://docs.bitquery.io/docs/mcp/polymarket/
 
 ## Support
 Questions and bugs: open an issue here, or write to support@bitquery.io. Account and billing questions go to support, since issues here are public.
