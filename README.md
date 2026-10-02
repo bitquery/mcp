@@ -1,6 +1,6 @@
 # Bitquery MCP Server
 
-By [Gaurav Agrawal](https://bitquery.io/about), Bitquery. Last updated 21 September 2026.
+By [Gaurav Agrawal](https://bitquery.io/about), Bitquery. Last updated 2 October 2026.
 
 Official hosted [Model Context Protocol](https://modelcontextprotocol.io) server from [Bitquery](https://bitquery.io/products/bitquery-mcp-server?utm_source=github&utm_medium=readme&utm_campaign=mcp). It gives Claude, ChatGPT, Cursor, VS Code, Codex and other MCP clients live on-chain data: DEX trades, prices, candles, trader PnL, fund tracing and address labels.
 
@@ -120,8 +120,8 @@ Sample, production server, 21 September 2026 between 10:21 and 10:25 UTC, after 
 | Plan | Price | Credits per month | Tools |
 |---|---|---|---|
 | Trial | free, 7 days | 100 | see the pricing page |
-| Trading MCP | $19 per month ($15 billed yearly) | 25,000 | 32, market data |
-| AI Investigation MCP | $149 per month ($119 billed yearly) | 200,000 | 123, all data plus labels and tracing |
+| Trading MCP | $19 per month ($13 billed yearly) | 25,000 | 32, market data |
+| AI Investigation MCP | $149 per month ($100 billed yearly) | 200,000 | 123, all data plus labels and tracing |
 
 Paid API plans can add MCP credits without changing plan. Current pricing: [bitquery.io/products/bitquery-mcp-server](https://bitquery.io/products/bitquery-mcp-server?utm_source=github&utm_medium=readme&utm_campaign=mcp#pricing).
 
@@ -138,4 +138,4 @@ Paid API plans can add MCP credits without changing plan. Current pricing: [bitq
 Questions and bugs: open an issue here, or write to support@bitquery.io. Account and billing questions go to support, since issues here are public.
 
 ## How this page was made
-Drafted with AI assistance. Every command, price, plan and tool name was checked against the live product page and the live endpoint on 21 September 2026.
+Drafted with AI assistance. Every command, price, plan and tool name was checked against the live product page and the live endpoint on 21 September 2026. The yearly prices in the plans table were checked again against the billing catalogue on 2 October 2026.
