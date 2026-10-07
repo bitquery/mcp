@@ -42,7 +42,7 @@ or use [`configs/codex.config.toml`](configs/codex.config.toml).
 ## What you can ask
 
 ### Trading and market data
-DEX trades on Ethereum, Arbitrum, Base, Polygon, Optimism, BNB Chain, Tron and Solana.
+DEX trades on Ethereum, Arbitrum, Base, Polygon, Optimism, BNB Chain, Tron, Solana, Robinhood Chain and Arc.
 
 | Ask | Tool the agent picks |
 |---|---|
@@ -54,7 +54,7 @@ DEX trades on Ethereum, Arbitrum, Base, Polygon, Optimism, BNB Chain, Tron and S
 | Run SQL over the last 30 days of per-second DEX trades. | `execute_sql` (paid plans) |
 
 ### Crypto investigations
-Transfer tracing on Ethereum, Polygon, Arbitrum, Base, Optimism, Tron, Bitcoin and Solana.
+Transfer tracing on 19 chains: Ethereum, BNB Chain, Polygon, Arbitrum, Base, Optimism, Robinhood Chain, Arc, Tron, Solana, Bitcoin, Litecoin, Dogecoin, Bitcoin Cash, Dash, Zcash, Cardano, the XRP Ledger and Stellar.
 
 | Ask | Tool or guided prompt |
 |---|---|
@@ -89,7 +89,7 @@ Sample answer to the first question, production server, 21 September 2026 at 09:
 `polymarket_top_traders` ranks wallets by dollars traded and carries no profit figure. The top wallet in the second market above had 48,736 of its 51,391 lifetime orders resting on the book, which is what a market maker looks like. Six worked questions with full output are on the [Polymarket MCP page](https://docs.bitquery.io/docs/mcp/polymarket/). To follow large traders, see [Track Polymarket whales and top traders](https://docs.bitquery.io/docs/mcp/polymarket-whale-tracker/). For volume, odds history and holders, see [Polymarket analytics with AI](https://docs.bitquery.io/docs/mcp/polymarket-analytics/). For building in code, see the [Polymarket GraphQL API docs](https://docs.bitquery.io/docs/examples/polymarket-api/).
 
 ### Solana and pump.fun
-Ten `solana_` tools cover transfers, signatures and program instructions, and the market tools cover Solana trades, prices and launches. Read-only: nothing here signs or sends a transaction.
+Eleven `solana_` tools cover transfers, signatures and program instructions, and the market tools cover Solana trades, prices and launches. Read-only: nothing here signs or sends a transaction.
 
 | Ask | Tool the agent picks |
 |---|---|
@@ -121,7 +121,7 @@ Sample, production server, 21 September 2026 between 10:21 and 10:25 UTC, after 
 |---|---|---|---|
 | Trial | free, 7 days | 100 | see the pricing page |
 | Trading MCP | $19 per month ($13 billed yearly) | 25,000 | 32, market data |
-| AI Investigation MCP | $149 per month ($100 billed yearly) | 200,000 | 123, all data plus labels and tracing |
+| AI Investigation MCP | $149 per month ($100 billed yearly) | 200,000 | all 314, data plus labels and tracing |
 
 Paid API plans can add MCP credits without changing plan. Current pricing: [bitquery.io/products/bitquery-mcp-server](https://bitquery.io/products/bitquery-mcp-server?utm_source=github&utm_medium=readme&utm_campaign=mcp#pricing).
 
