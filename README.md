@@ -9,7 +9,7 @@ Official hosted [Model Context Protocol](https://modelcontextprotocol.io) server
 - **Sign-in:** OAuth 2.1 with your Bitquery account. No API key to paste and no config secrets.
 - **Install:** nothing runs on your machine. The server is hosted.
 
-This repository holds the install configs, example prompts and docs. The server itself is a hosted service, so there is no code to build here.
+This repository holds the install configs, example prompts and docs, plus the manifests that MCP catalogs read: [`server.json`](server.json) for the official MCP registry and [`gemini-extension.json`](gemini-extension.json) for Gemini CLI. The server itself is a hosted service, so there is no code to build here.
 
 **Watch the 38-second demo:** [Polymarket and Hyperliquid data in ChatGPT and Claude](https://www.youtube.com/watch?v=IwuIlcKsANk).
 
@@ -37,7 +37,31 @@ codex mcp add bitquery --url https://mcp.bitquery.io
 ```
 or use [`configs/codex.config.toml`](configs/codex.config.toml).
 
+**Gemini CLI**
+```bash
+gemini extensions install https://github.com/bitquery/mcp
+```
+This reads [`gemini-extension.json`](gemini-extension.json) from this repository.
+
+**Cline**: MCP Servers → Remote Servers. Name `bitquery`, URL `https://mcp.bitquery.io/mcp`, transport Streamable HTTP.
+
+**OpenClaw**
+```bash
+openclaw mcp set bitquery '{"url":"https://mcp.bitquery.io/mcp","transport":"streamable-http","auth":"oauth"}'
+openclaw mcp login bitquery
+```
+
+**Hermes**: add the server to `~/.hermes/config.yaml`, then run `hermes mcp login bitquery`.
+```yaml
+mcp_servers:
+  bitquery:
+    url: https://mcp.bitquery.io/mcp
+    auth: oauth
+```
+
 **Clients that only speak stdio** bridge through `mcp-remote`: see [`configs/claude-desktop-stdio-bridge.json`](configs/claude-desktop-stdio-bridge.json).
+
+**AI agents installing this server** should read [`llms-install.md`](llms-install.md). Step-by-step guide for people: [docs.bitquery.io/docs/mcp/mcp-server](https://docs.bitquery.io/docs/mcp/mcp-server/).
 
 ## What you can ask
 
