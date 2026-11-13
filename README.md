@@ -4,7 +4,7 @@ By [Gaurav Agrawal](https://bitquery.io/about), Bitquery. Last updated 13 Novemb
 
 Official hosted [Model Context Protocol](https://modelcontextprotocol.io) server from [Bitquery](https://bitquery.io/products/bitquery-mcp-server?utm_source=github&utm_medium=readme&utm_campaign=mcp). It gives Claude, ChatGPT, Cursor, VS Code, Codex and other MCP clients live on-chain data: DEX trades, prices, candles, trader PnL, fund tracing and address labels.
 
-- **Endpoint:** `https://mcp.bitquery.io`
+- **Endpoint:** `https://mcp.bitquery.io`. The address `https://mcp.bitquery.io/mcp` reaches the same server, and some install steps below use that form.
 - **Transport:** Streamable HTTP
 - **Sign-in:** OAuth 2.1 with your Bitquery account. No API key to paste and no config secrets.
 - **Install:** nothing runs on your machine. The server is hosted.
