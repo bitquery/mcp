@@ -21,9 +21,9 @@ This repository holds the install configs, example prompts and docs, plus the ma
 ```bash
 claude mcp add --transport http bitquery https://mcp.bitquery.io
 ```
-Add `--scope user` to enable it in every project. On first use run `/mcp` and finish the browser login.
+Add `--scope user` to enable it in every project. Then run `claude mcp login bitquery` once; a browser window opens the Bitquery sign-in page.
 
-**Claude Desktop and claude.ai**: Settings → Connectors → Add custom connector. Name `Bitquery`, URL `https://mcp.bitquery.io`. A browser window opens for login.
+**Claude Desktop and claude.ai**: Customize → Connectors → **+ Add** → Add custom connector. Name `Bitquery`, URL `https://mcp.bitquery.io`. A browser window opens for login. On Team and Enterprise plans, an owner adds it once under Organization settings → Connectors, and members then click Connect.
 
 **ChatGPT** (Plus, Pro or Business): Settings → Connectors → Add connector → Custom connector. URL `https://mcp.bitquery.io`.
 
@@ -99,7 +99,7 @@ Transfer tracing on 19 chains: Ethereum, BNB Chain, Polygon, Arbitrum, Base, Opt
 | Show the daily close for Yes over the last week. | `polymarket_market_price_history` |
 | Show the latest fills above $10,000 in this market. | `polymarket_market_trades` |
 | Who traded the most in this market? | `polymarket_top_traders` |
-| Is this wallet a market maker or a directional bettor? | `polymarket_trader_summary` |
+| Is this wallet a market maker or a directional trader? | `polymarket_trader_summary` |
 | Which outcomes were disputed this week? | `polymarket_market_disputes` |
 
 Sample answer to the first question, production server, 21 September 2026 at 09:08 UTC, data 14 minutes behind the clock:
@@ -127,7 +127,7 @@ Eleven `solana_` tools cover transfers, signatures and program instructions, and
 Check the token address before you trust a row. On 21 September 2026 the top "USDT" in Solana's 24-hour volume ranking was a counterfeit: `token_dex_venues` showed 5 trades between 2 wallets behind a reported $986,660,608. Six worked questions with full output are on the [Solana MCP page](https://docs.bitquery.io/docs/mcp/solana/).
 
 ### Hyperliquid
-18 read-only tools over the exchange's own blocks: perpetuals, spot pairs, third-party markets and outcome markets. They cannot place or cancel orders.
+Read-only tools over the exchange's own blocks: perpetuals, spot pairs, third-party markets and outcome markets. They cannot place or cancel orders.
 
 | Ask | Tool the agent picks |
 |---|---|
@@ -144,8 +144,8 @@ Sample, production server, 21 September 2026 between 10:21 and 10:25 UTC, after 
 | Plan | Price | Credits per month | Tools |
 |---|---|---|---|
 | Trial | free, 7 days | 100 | see the pricing page |
-| Trading MCP | $19 per month ($13 billed yearly) | 25,000 | 32, market data |
-| AI Investigation MCP | $149 per month ($100 billed yearly) | 200,000 | all 314, data plus labels and tracing |
+| Trading MCP | $19 per month ($13 billed yearly) | 25,000 | market data |
+| AI Investigation MCP | $149 per month ($100 billed yearly) | 200,000 | market data, address labels and tracing |
 
 Paid API plans can add MCP credits without changing plan. Current pricing: [bitquery.io/products/bitquery-mcp-server](https://bitquery.io/products/bitquery-mcp-server?utm_source=github&utm_medium=readme&utm_campaign=mcp#pricing).
 
@@ -162,4 +162,4 @@ Paid API plans can add MCP credits without changing plan. Current pricing: [bitq
 Questions and bugs: open an issue here, or write to support@bitquery.io. Account and billing questions go to support, since issues here are public.
 
 ## How this page was made
-Drafted with AI assistance. Every command, price, plan and tool name was checked against the live product page and the live endpoint on 21 September 2026. The yearly prices in the plans table were checked again against the billing catalogue on 2 October 2026. The Gemini CLI, Cline, OpenClaw and Hermes install steps were added on 13 November 2026 and checked that day against the documentation each client publishes.
+Drafted with AI assistance. Every command, price, plan and tool name was checked against the live product page and the live endpoint on 21 September 2026. The yearly prices in the plans table were checked again against the billing catalogue on 2 October 2026. The Gemini CLI, Cline, OpenClaw and Hermes install steps were added on 13 November 2026 and checked that day against the documentation each client publishes. The Claude and Claude Code steps were updated the same day against Claude's help center and `claude mcp --help` in Claude Code 2.1.281.
