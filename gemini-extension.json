@@ -1,0 +1,10 @@
+{
+  "name": "bitquery",
+  "version": "1.0.3",
+  "description": "Live on-chain data from Bitquery: DEX trades, prices, candles, trader PnL, fund tracing and address labels.",
+  "mcpServers": {
+    "bitquery": {
+      "httpUrl": "https://mcp.bitquery.io/mcp"
+    }
+  }
+}

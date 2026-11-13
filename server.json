@@ -1,0 +1,39 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.bitquery/mcp",
+  "title": "Bitquery MCP",
+  "description": "Live on-chain data for AI agents: DEX trades, prices, trader PnL, fund tracing, address labels.",
+  "version": "1.0.3",
+  "websiteUrl": "https://docs.bitquery.io/docs/mcp/mcp-server/",
+  "repository": {
+    "url": "https://github.com/bitquery/mcp",
+    "source": "github"
+  },
+  "icons": [
+    {
+      "src": "https://raw.githubusercontent.com/bitquery/mcp/main/assets/logo-400.png",
+      "mimeType": "image/png",
+      "sizes": ["400x400"]
+    },
+    {
+      "src": "https://raw.githubusercontent.com/bitquery/mcp/main/assets/logo.svg",
+      "mimeType": "image/svg+xml",
+      "sizes": ["any"]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.bitquery.io/mcp"
+    }
+  ],
+  "_meta": {
+    "io.modelcontextprotocol.registry/publisher-provided": {
+      "io.bitquery": {
+        "auth": "OAuth 2.1 with PKCE and dynamic client registration. Clients discover it from https://mcp.bitquery.io/.well-known/oauth-protected-resource. No static Authorization header and no API key in config.",
+        "authorizationServer": "https://account.bitquery.io",
+        "readOnly": true
+      }
+    }
+  }
+}
