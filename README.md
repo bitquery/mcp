@@ -1,6 +1,6 @@
 # Bitquery MCP Server
 
-By [Gaurav Agrawal](https://bitquery.io/about), Bitquery. Last updated 2 October 2026.
+By [Gaurav Agrawal](https://bitquery.io/about), Bitquery. Last updated 13 November 2026.
 
 Official hosted [Model Context Protocol](https://modelcontextprotocol.io) server from [Bitquery](https://bitquery.io/products/bitquery-mcp-server?utm_source=github&utm_medium=readme&utm_campaign=mcp). It gives Claude, ChatGPT, Cursor, VS Code, Codex and other MCP clients live on-chain data: DEX trades, prices, candles, trader PnL, fund tracing and address labels.
 
@@ -162,4 +162,4 @@ Paid API plans can add MCP credits without changing plan. Current pricing: [bitq
 Questions and bugs: open an issue here, or write to support@bitquery.io. Account and billing questions go to support, since issues here are public.
 
 ## How this page was made
-Drafted with AI assistance. Every command, price, plan and tool name was checked against the live product page and the live endpoint on 21 September 2026. The yearly prices in the plans table were checked again against the billing catalogue on 2 October 2026.
+Drafted with AI assistance. Every command, price, plan and tool name was checked against the live product page and the live endpoint on 21 September 2026. The yearly prices in the plans table were checked again against the billing catalogue on 2 October 2026. The Gemini CLI, Cline, OpenClaw and Hermes install steps were added on 13 November 2026 and checked that day against the documentation each client publishes.
