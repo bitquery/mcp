@@ -1,5 +1,7 @@
 # Installing the Bitquery MCP server
 
+By [Gaurav Agrawal](https://bitquery.io/about), Bitquery. Last updated 13 November 2026.
+
 This file is for AI coding agents that install MCP servers on a user's behalf. Follow the section for the client you are running in.
 
 ## Facts for every client
@@ -19,15 +21,17 @@ After adding the server, the first tool call opens a browser window for sign-in.
 claude mcp add --transport http bitquery https://mcp.bitquery.io/mcp
 ```
 
-Add `--scope user` to enable it in every project. Then the user runs `/mcp` inside Claude Code, picks `bitquery` and finishes the browser login.
+Add `--scope user` to enable it in every project. Then the user runs `claude mcp login bitquery`, which opens the browser login.
 
 ## Claude Desktop and claude.ai
 
 This is done in the app, not in a file.
 
-1. Settings → Connectors → Add custom connector.
+1. Customize → Connectors → + Add → Add custom connector.
 2. Name: `Bitquery`. URL: `https://mcp.bitquery.io/mcp`.
-3. Click Connect and sign in.
+3. Click Continue, then Add, and sign in.
+
+On Team and Enterprise plans, an owner first adds the connector under Organization settings → Connectors; members then click Connect.
 
 ## Cursor
 
