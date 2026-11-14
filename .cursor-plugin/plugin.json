@@ -1,0 +1,26 @@
+{
+  "name": "bitquery",
+  "version": "1.0.3",
+  "description": "Bitquery's hosted, read-only MCP server for blockchain data: DEX trades, token prices and candles, Solana and pump.fun launches, trader positions, and wallet tracing with address labels on 19 chains, plus Hyperliquid and Polymarket. Sign in with a Bitquery account over OAuth; there is no API key to paste.",
+  "author": {
+    "name": "Bitquery"
+  },
+  "homepage": "https://bitquery.io/products/bitquery-mcp-server?utm_source=cursor&utm_medium=marketplace&utm_campaign=mcp",
+  "repository": "https://github.com/bitquery/mcp",
+  "license": "MIT",
+  "keywords": [
+    "crypto",
+    "blockchain",
+    "onchain-data",
+    "solana",
+    "pump-fun",
+    "dex",
+    "defi",
+    "hyperliquid",
+    "polymarket",
+    "wallet-tracing",
+    "aml",
+    "mcp"
+  ],
+  "logo": "assets/logo.svg"
+}
