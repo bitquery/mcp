@@ -2,7 +2,7 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.bitquery/mcp",
   "title": "Bitquery MCP",
-  "description": "Live on-chain data for AI agents: DEX trades, prices, trader PnL, fund tracing, address labels.",
+  "description": "On-chain data: DEX trades, prices, pump.fun launches, wallet tracing, Hyperliquid, Polymarket.",
   "version": "1.0.3",
   "websiteUrl": "https://docs.bitquery.io/docs/mcp/mcp-server/",
   "repository": {
